@@ -33,5 +33,27 @@
     "currency": "EUR",
     "waterfall": ["Yahoo"],
     "group": "Cash"
+  },
+  "GM-BTC": {
+    "ticker": "arbitrum:0x47c031236e19d024b42f8AE6780E44A573170703",
+    "name": "GMX BTC/USD",
+    "currency": "USD",
+    "waterfall": ["Llama"],
+    "group": "Liquidity Pools"
+  },
+  "GM-ETH": {
+    "ticker": "arbitrum:0x70d95587d40a2caf56bd97485ab3eec10bee6336",
+    "name": "GMX ETH/USD",
+    "currency": "USD",
+    "waterfall": ["Llama"],
+    "group": "Liquidity Pools"
+  },
+  "GLP": {
+    "ticker": "arbitrum:0x4277f8F2c384827B5273592FF7CeBd9f2C1ac258",
+    "name": "GLP",
+    "currency": "USD",
+    "waterfall": ["Llama"],
+    "group": "Liquidity Pools",
+    "active": false
   }
 }

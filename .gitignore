@@ -5,10 +5,14 @@
 # Python internals
 **/__pycache__/
 *.pyc
+STYLEGUIDE.md
+AGENTS.md
+checklist.md
 
 # Data folders
 data/transactions
-queries/
+data/blockchain
+data/real_estate
 
 # Secrets
-src/historical_transactions/utils/token.txt
+src/file_paths/token.txt

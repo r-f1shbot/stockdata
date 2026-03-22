@@ -14,7 +14,6 @@ def get_token():
 
 
 GETQUIN_URL = "https://api-gql-v2.getquin.com/"
-TOKEN = get_token()
 
 # Main paths
 BASE_FOLDER = Path(__file__).parents[2]
@@ -46,3 +45,20 @@ with open(STOCK_METADATA_PATH, "r") as f:
 
 with open(CURRENCY_METADATA_PATH, "r") as f:
     CURRENCY_METADATA: dict[str, dict[str, str]] = json.load(f)
+
+# Blockchain related paths
+BLOCKCHAIN_FOLDER = DATA_FOLDER / "blockchain"
+CHAIN_INFO_PATH = BLOCKCHAIN_FOLDER / "chain_info.json"
+TOKENS_FOLDER = BLOCKCHAIN_FOLDER / "tokens"
+BLOCKCHAIN_TRANSACTIONS_FOLDER = BLOCKCHAIN_FOLDER / "transactions"
+BLOCKCHAIN_SNAPSHOT_FOLDER = BLOCKCHAIN_FOLDER / "snapshots"
+BLOCKCHAIN_BLOCK_MAP_FOLDER = BLOCKCHAIN_FOLDER / "block_map"
+PROTOCOL_UNDERLYING_TOKEN_FOLDER = BLOCKCHAIN_FOLDER / "protocol_underlying_tokens"
+
+# Real estate related paths
+REAL_ESTATE_FOLDER = DATA_FOLDER / "real_estate"
+REAL_ESTATE_COSTS_FILE_NAME = "costs.csv"
+REAL_ESTATE_INFLOWS_FILE_NAME = "inflows.csv"
+REAL_ESTATE_VALUES_FILE_NAME = "values.csv"
+REAL_ESTATE_OWNERSHIP_FILE_NAME = "ownership.csv"
+REAL_ESTATE_MORTGAGE_GLOB = "*mortgage*.csv"
