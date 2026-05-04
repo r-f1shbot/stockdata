@@ -13,6 +13,7 @@ checklist.md
 node_modules/
 dist/
 *.log
+.idea
 
 # Data folders
 data/transactions
